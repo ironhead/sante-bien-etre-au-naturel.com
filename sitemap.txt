@@ -1,0 +1,13 @@
+http://sante-bien-etre-au-naturel.com/ajaxmaux.php
+http://sante-bien-etre-au-naturel.com/ajax-ssmaux.php
+http://sante-bien-etre-au-naturel.com/animaux.php
+http://sante-bien-etre-au-naturel.com/aroma.php
+http://sante-bien-etre-au-naturel.com/cequejevouspropose.php
+http://sante-bien-etre-au-naturel.com/consultadom.php
+http://sante-bien-etre-au-naturel.com/contact.php
+http://sante-bien-etre-au-naturel.com/econsult.php
+http://sante-bien-etre-au-naturel.com/index.php
+http://sante-bien-etre-au-naturel.com/phyto.php
+http://sante-bien-etre-au-naturel.com/questionnaire_action.php
+http://sante-bien-etre-au-naturel.com/questionnaire.php
+http://sante-bien-etre-au-naturel.com/quisuisje.php
