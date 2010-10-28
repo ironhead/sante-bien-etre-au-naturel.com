@@ -57,8 +57,18 @@ else
   {//if "email" is not filled out, display the form
   echo "
   <p>
-    <form method='post' action='contact.php'> Votre adresse mail : <input name='email' type='text' /><br />
-	Sujet du message: <input name='subject' type='text' /><br />  Message:<br />
+    <form method='post' action='contact.php'>
+	<table>
+	    <tr>
+		<td>Votre adresse mail : </td>
+		<td><input name='email' type='text' /></td>
+	    </tr>
+	    <tr>
+		<td>Sujet du message:</td>
+		<td><input name='subject' type='text' /></td>
+	    </tr>
+	</table>
+	<br />  Message:<br />
 	<textarea name='message' rows='15' cols='40'></textarea><br />
 	<input type='submit' />
     </form>
