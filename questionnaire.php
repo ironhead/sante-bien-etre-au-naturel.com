@@ -105,6 +105,7 @@
        </table>
     <ul>
       <li><label for="allergie"> avez-vous des allergies ?</label> <input type="checkbox" name="allergie" id="allergie" /></li>
+      <li><label for="asthme"> faites-vous de l'asthme ?</label> <input type="checkbox" name="asthme" id="asthme" /></li>
       <li><label for="epileptie"> avez-vous des antécédents épileptiques ?</label><input type="checkbox" name="epileptie" id="epileptie"/></li>
       <li><label for="vege"> suivez-vous un régime végétarien ou végétalien ?</label><input type="checkbox" name="vege" id="vege"/></li>
     </ul>

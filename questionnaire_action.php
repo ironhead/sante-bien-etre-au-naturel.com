@@ -19,6 +19,9 @@
 	if(isset($_POST["allergie"])){
 		$corpsDuMessage .= "Allergique\n";
 		};
+	if(isset($_POST["asthme"])){
+		$corpsDuMessage .= "Asthmatique\n";
+		};	
 	if(isset($_POST["epileptie"])){	
 		$corpsDuMessage .= "Epileptique\n";
 		};
