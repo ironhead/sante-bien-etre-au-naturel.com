@@ -116,9 +116,9 @@
     <select name="groupes" id="groupes_sel" size="9" onchange='charge_maux()'>
     <?php
 	include 'dbconfig.inc' ;
-	$res = mysql_query("SELECT `id`,`nom` FROM `Grp_maux` ORDER BY nom");
+	$reponse = $bdd->query("SELECT `id`,`nom` FROM `Grp_maux` ORDER BY nom");
 	echo "<option value='-1'>Choisir une famille</option>" ;
-	while($row = mysql_fetch_assoc($res)){
+	while($row = $reponse->fetch()){
 	echo "<option value='".$row["id"]."'>".$row["nom"]."</option>";
 	}
     ?>

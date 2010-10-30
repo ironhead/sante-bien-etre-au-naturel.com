@@ -11,11 +11,11 @@
   <div id="content">
 	<?php
 	$corpsDuMessage = "Questionnaire envoyé depuis le site\n" ;
-	$corpsDuMessage .= "Nom =".$_POST['nom']."\n";
-	$corpsDuMessage .= "Prenom =".$_POST['prenom']."\n";
-	$corpsDuMessage .= "@email =".$_POST['email']."\n";
-	$corpsDuMessage .= "âge =".$_POST['age']."\n";
-	$corpsDuMessage .= "Poids =".$_POST['poids']."\n";
+	$corpsDuMessage .= "Nom = ".$_POST['nom']."\n";
+	$corpsDuMessage .= "Prenom = ".$_POST['prenom']."\n";
+	$corpsDuMessage .= "@email = ".$_POST['email']."\n";
+	$corpsDuMessage .= "âge = ".$_POST['age']."\n";
+	$corpsDuMessage .= "Poids = ".$_POST['poids']."\n";
 	if(isset($_POST["allergie"])){
 		$corpsDuMessage .= "Allergique\n";
 		};
@@ -30,11 +30,13 @@
 		};
 		/* on explicite les Ids */
 	include 'dbconfig.inc' ;
-	$NomMal = mysql_result(mysql_query("SELECT `nom` from `maux` WHERE `id`=".$_POST['maux']." "),0,0);
-	$corpsDuMessage .= "Mal =".$NomMal."\n";
+	$reponse = $bdd->query("SELECT `nom` from `maux` WHERE `id`=".$_POST['maux']." ");
+	$NomMal = $reponse->fetch();
+	$corpsDuMessage .= "Mal = ".$NomMal['nom']."\n";
 	if(isset($_POST["ss-maux"]) && $_POST["ss-maux"] >0){
-		$NomSsMal = mysql_result(mysql_query("SELECT `nom` from `ss-maux` WHERE `id`=".$_POST['ss-maux']." "),0,0);
-		$corpsDuMessage .= "Ss-mal =".$NomSsMal."\n";
+		$reponse = $bdd->query("SELECT `nom` from `ss-maux` WHERE `id`=".$_POST['ss-maux']." ");
+		$NomSsMal = $reponse->fetch();
+		$corpsDuMessage .= "Ss-mal = ".$NomSsMal['nom']."\n";
 		};
 	$corpsDuMessage .= "Message Complémentaire = \n".$_POST['message']."\n";
 	$corpsDuMessage .= "Fin";
